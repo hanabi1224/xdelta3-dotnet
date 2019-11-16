@@ -30,6 +30,7 @@ for:
       only:
         - image: Ubuntu
     install:
+      - git submodule update --init --recursive
       - curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUST_TOOL_CHAIN}
       - source $HOME/.cargo/env
       - rustup component add rustfmt
@@ -42,6 +43,7 @@ for:
       only:
         - image: Visual Studio 2019
     install:
+      - git submodule update --init --recursive
       - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
       - scoop install rustup
       - refreshenv
