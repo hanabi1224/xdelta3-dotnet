@@ -12,11 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="xdelta3.net.redist.windows.x64" Version="1.0.0-pre1" />
-    <PackageReference Include="xdelta3.net.redist.linux.x64" Version="1.0.0-pre1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
     <PackageReference Include="NUnit" Version="3.*" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.*" />

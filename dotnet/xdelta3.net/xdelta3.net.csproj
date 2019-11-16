@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
-    <Description>Dotnet binding to xdelta3.</Description>
+    <Version>1.0.1</Version>
+    <Description>Dotnet binding to [xdelta3](https://github.com/jmacd/xdelta/).</Description>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,6 +19,11 @@
 
   <ItemGroup>
     <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xdelta3.net.redist.windows.x64" Version="1.*" />
+    <PackageReference Include="xdelta3.net.redist.linux.x64" Version="1.*" />
   </ItemGroup>
 
 </Project>
