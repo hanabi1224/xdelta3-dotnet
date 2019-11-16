@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;</TargetFrameworks>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <Version>1.0.0-pre1</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>Redistribution of xdelta3 native lib for linux-x64</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../../../xdelta3-rs/target/release/libxdelta3.so">
+      <PackagePath>runtimes/linux-x64/native/libxdelta3.so</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+  </ItemGroup>
+</Project>

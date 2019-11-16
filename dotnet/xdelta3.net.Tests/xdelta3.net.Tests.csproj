@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.1;netcoreapp3.0;</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">net472;$(TargetFrameworks)</TargetFrameworks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\xdelta3.net\xdelta3.net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xdelta3.net.redist.windows.x64" Version="1.0.0-pre1" />
+    <PackageReference Include="xdelta3.net.redist.linux.x64" Version="1.0.0-pre1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
+    <PackageReference Include="NUnit" Version="3.*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.*" />
+    <PackageReference Include="FluentAssertions" Version="5.*" />
+    <PackageReference Include="coverlet.msbuild" Version="2.*" />
+  </ItemGroup>
+
+</Project>

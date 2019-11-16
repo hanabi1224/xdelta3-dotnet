@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45;</TargetFrameworks>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <Version>1.0.0-pre1</Version>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>Redistribution of xdelta3 native lib for win-x64</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build.props">
+      <PackagePath>build/net45/$(PackageId).props</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="../../../xdelta3-rs/target/release/xdelta3.dll">
+      <PackagePath>runtimes/win-x64/native/xdelta3.dll</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+  </ItemGroup>
+</Project>
